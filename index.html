@@ -1,101 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Currículo de Marty McFly."
-  />
-  <title>Marty McFly | Currículo</title>
-  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Currículo profissional de Marty McFly."/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+          <title>Currículo | Marty McFly</title>
+  </head>
 
-  <script
-    src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
-    defer
-  ></script>
-  <script src="app.js" defer></script>
-</head>
+  <body>
+    <div id="app"></div>
 
-<body>
-  <div id="app" class="page">
-    <header class="resume-header">
-      <div class="monogram" aria-label="Iniciais de Marty McFly">
-        MM
-      </div>
-
-      <div class="header-info">
-        <h1>{{ name }}</h1>
-        <p class="professional-title">{{ professionalTitle }}</p>
-      </div>
-    </header>
-
-    <main class="resume-layout">
-      <section class="main-column">
-        <p class="profile">{{ profile }}</p>
-
-        <section class="experience-section">
-          <h2 class="section-heading">
-            Experiências Profissionais
-          </h2>
-
-          <article
-            v-for="job in experience"
-            :key="job.id"
-            class="experience-entry"
-          >
-            <h3>{{ job.date }} <span>|</span> {{ job.company }}</h3>
-            <p class="role">{{ job.role }}</p>
-            <p class="description">{{ job.description }}</p>
-          </article>
-        </section>
-      </section>
-
-      <aside class="sidebar">
-        <section class="education-section">
-          <h2 class="section-heading spaced-heading">Educação</h2>
-
-          <article
-            v-for="item in education"
-            :key="item.id"
-            class="education-entry"
-          >
-            <h3>{{ item.year }} <span>|</span> {{ item.institution }}</h3>
-            <p class="education-type">{{ item.type }}</p>
-            <p class="description">{{ item.description }}</p>
-          </article>
-        </section>
-
-        <section class="contact-section">
-          <h2 class="section-heading spaced-heading">Contato</h2>
-
-          <div class="contact-entry">
-            <span class="contact-label">Endereço:</span>
-            <span>{{ contact.address }}</span>
-          </div>
-
-          <div class="contact-entry">
-            <span class="contact-label">E-mail:</span>
-            <a :href="'mailto:' + contact.email">
-              {{ contact.email }}
-            </a>
-          </div>
-
-          <div class="contact-entry">
-            <span class="contact-label">Telefone:</span>
-            <a :href="'tel:' + contact.phoneLink">
-              {{ contact.phone }}
-            </a>
-          </div>
-        </section>
-      </aside>
-    </main>
-
-    <footer class="resume-footer">
-      <p>Copyright © 2026 — Todos os direitos reservados</p>
-    </footer>
-  </div>
-</body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
+
 
 

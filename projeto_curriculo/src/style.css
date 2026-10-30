@@ -1,13 +1,19 @@
 :root {
   --accent: #ffd52a;
   --text: #242424;
-  --muted: #555555;
+  --muted: #555;
   --line: #d9d9d9;
   --page-width: 1120px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
 }
 
 html {
@@ -194,7 +200,7 @@ body {
   text-decoration: underline;
 }
 
-/* Footer */
+
 
 .resume-footer {
   margin-top: 28px;
@@ -212,12 +218,6 @@ body {
 }
 
 
-
-@media (min-width: 1200px) {
-  .page {
-    min-height: 100vh;
-  }
-}
 
 @media (max-width: 760px) {
   .page {
@@ -287,6 +287,8 @@ body {
     letter-spacing: 1px;
   }
 }
+
+
 
 @media print {
   html,
