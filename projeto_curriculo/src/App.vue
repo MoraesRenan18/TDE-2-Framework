@@ -1,6 +1,6 @@
 <script setup>
-import Header from './components/header.vue'
-import SobreMim from './components/sobremim.vue'
+import Header from './components/Header.vue'
+import SobreMim from './components/SobreMim.vue'
 import Experiencia from './components/Experiencia.vue'
 import Formacao from './components/Formacao.vue'
 import Contato from './components/Contato.vue'
